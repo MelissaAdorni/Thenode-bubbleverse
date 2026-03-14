@@ -1,0 +1,11 @@
+{
+  "name": "thenode-bubbleverse",
+  "version": "1.0.0",
+  "description": "A node project in the bubbleverse",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "MelissaAdorni",
+  "license": "MIT"
+}
