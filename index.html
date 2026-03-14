@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Bubbleverse</title>
+    <style>
+        body { 
+            background: linear-gradient(to bottom, #1e3c72, #2a5298); 
+            color: white; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding-top: 50px; 
+        }
+        .bubble {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>🫧 Welcome to the Bubbleverse 🫧</h1>
+    <p>Your Node.js server is now serving a real webpage!</p>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</body>
+</html>
