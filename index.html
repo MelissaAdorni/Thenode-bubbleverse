@@ -8,7 +8,8 @@
             color: white; 
             font-family: sans-serif; 
             text-align: center; 
-            padding-top: 50px; 
+            padding: 50px 20px; 
+            margin: 0;
         }
         .bubble {
             display: inline-block;
@@ -24,13 +25,58 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-20px); }
         }
+        .support-box {
+            margin-top: 80px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 40px;
+        }
+        .progress-bg {
+            width: 80%; 
+            background: rgba(255,255,255,0.1); 
+            border-radius: 10px; 
+            margin: 10px auto; 
+            height: 20px;
+            max-width: 500px;
+        }
+        .progress-fill {
+            width: 5%; 
+            background: #00e676; 
+            height: 100%; 
+            border-radius: 10px;
+        }
+        .stripe-button {
+            background-color: #6772e5; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .stripe-button:hover {
+            transform: scale(1.05);
+            background-color: #7a86fa;
+        }
     </style>
 </head>
 <body>
+
     <h1>🫧 Welcome to the Bubbleverse 🫧</h1>
-    <p>Your Node.js server is now serving a real webpage!</p>
+    <p>A Node.js experiment in motion.</p>
+
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
-</body>
-</html>
+
+    <div class="support-box">
+        <h3>Help us secure thenode.ai</h3>
+        
+        <div class="progress-bg">
+            <div class="progress-fill"></div>
+        </div>
+        <p style="font-size: 0.9em;">Goal: $170 | Current: $0</p>
+
+        
